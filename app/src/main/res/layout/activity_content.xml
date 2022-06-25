@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ContentActivity">
+
+    <ImageButton
+        android:onClick="onClickSwitchToPreviousPage"
+        android:id="@+id/imageButtonPreviousPage"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/icons"
+        app:layout_constraintBottom_toBottomOf="@id/textViewPageOrder"
+        app:layout_constraintEnd_toStartOf="@id/textViewPageOrder"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/textViewPageOrder"
+        android:src="@drawable/previous"
+        android:contentDescription="@string/switch_to_previous_page" />
+
+    <ImageButton
+        android:onClick="onClickSwitchToNextPage"
+        android:id="@+id/imageButtonNextPage"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/icons"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewPageOrder"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/textViewPageOrder"
+        app:layout_constraintTop_toTopOf="@+id/textViewPageOrder"
+        android:src="@drawable/next"
+        android:contentDescription="@string/switch_to_next_page" />
+
+    <TextView
+        android:id="@+id/textViewPageOrder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="20"
+        android:textSize="30sp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/pages"
+        android:overScrollMode="never"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginTop="4dp"
+        android:textSize="14sp"
+        tools:text="Sheix"
+        app:layout_constraintBottom_toTopOf="@+id/textViewPageOrder"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
