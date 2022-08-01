@@ -12,5 +12,5 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
-rootProject.name = "contentlist_v1"
+rootProject.name = "JK_0083_contentlist_v1"
 include ':app'

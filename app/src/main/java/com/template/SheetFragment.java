@@ -1,5 +1,6 @@
 package com.template;
 
+import android.os.Build;
 import android.os.Bundle;
 import android.text.Html;
 import android.util.TypedValue;
@@ -26,7 +27,7 @@ public class SheetFragment extends Fragment {
         CharSequence content = getArguments().getCharSequence(PAGE_CONTENT);
         TextView pageTextView = (TextView) inflater.inflate(R.layout.page, container, false);
         pageTextView.setTextSize(TypedValue.COMPLEX_UNIT_PX, getResources().getDimension(R.dimen.text_size));
-        pageTextView.setText(Html.fromHtml(String.format(getString(R.string.sample_string),content),Html.FROM_HTML_MODE_LEGACY));
+        pageTextView.setText(Html.fromHtml("<h2>" + ContentActivity.title + "</h2><br><p>" + content + "</p>"));
         return pageTextView;
     }
 }

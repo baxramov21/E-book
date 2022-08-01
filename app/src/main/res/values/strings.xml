@@ -3,7 +3,6 @@
     <string name="content_list">Content List</string>
     <string name="switch_to_next_page">Switch to next page</string>
     <string name="switch_to_previous_page">Switch to previous page</string>
-
-    <string name="sample_string"><![CDATA[<h2>Умение общаться с другими — не дар, а навык</h2><br><p>%s</p>]]></string>
+    <string name="title">%s</string>
     <string name="about_us">About us</string>
 </resources>
